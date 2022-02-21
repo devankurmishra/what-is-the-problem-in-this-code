@@ -1,0 +1,29 @@
+let marks = [89, 74, 68, 85, 72, 90];
+const maximum = function (n) {
+  let max = n[0];
+  for (let i = 0; i < n.length; i++) {
+    let currentMarks = n[i];
+    if (currentMarks > max) {
+      max = currentMarks;
+    }
+    return max;
+  }
+};
+const minimum = function (n) {
+  let min = n[0];
+  for (let i = 0; i < n.length; i++) {
+    let currentMarks = n[i];
+    if (currentMarks < min) {
+      min = currentMarks;
+    }
+    return min;
+  }
+};
+
+const maxi = maximum(marks);
+const mini = minimum(marks);
+console.log(`Maximum number is : ${maxi}`);
+console.log(`Minimum number is : ${mini}`);
+//in my case it is returning
+//Maximum number is : 89
+//Minimum number is : 89
